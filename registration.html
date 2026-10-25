@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+    </head>
+    <body>
+        <h1>Student Registration Form</h1>
+        <form action="#" method="post">
+            <fieldset>
+                <legend><h2>Personal Information</h2></legend>
+                <label for="name" >Name</label><br>
+                <input id="name" type="text" name="name" placeholder="Enter your name" required><br><br>
+                <label for="email" >Email</label><br>
+                <input id="email" type="email" name="Email" placeholder="Enter your email" required><br><br>
+                <label for="pwd" >Password</label><br>
+                <input id="pwd" type="password" name="Password" placeholder="Enter your password" required><br><br>
+                <label for="birthday">Your Birthday</label><br>
+                <input id="birthday" type="date" name="Birthday" required>
+            </fieldset><br><br>
+            <fieldset>
+                <legend><h2>Gender</h2><legend>
+                    <label for="genderM"><input id="genderM" type="radio" name="gender">Male</label>
+                    <label for="genderF"><input id="genderF" type="radio" name="gender">Female</label>
+            </fieldset><br><br>
+            <fieldset>
+                <legend><h2>Course Selection</h2></legend>
+                <label for="crs">Course</label><br>
+                <select id="crs" name="course" placeholder="Select your course" required>
+                    <option value="" readonly>Select your course</option>
+                    <option value="Web-Development">Web Development</option>
+                    <option value="Data-Science">Data Science</option>
+                    <option value="Digital-Marketing">Digital Marketing</option>
+                </select>
+            </fieldset><br><br>
+
+            <input id="tc" name="agreement" type="checkbox"><br>
+            <label for="tc">I agree to the terms and conditions</label><br><br>
+
+            <input name="submit" type="submit" value="Registrer">
+            
+        </form>
+    </body>
+</html>
